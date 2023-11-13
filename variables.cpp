@@ -3,6 +3,7 @@
 */
 
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -26,7 +27,11 @@ int main() {
         cout << "This is an uninitalized String: " << uninitString << endl;
     }
 
-    
+    unsigned int i {-4294967295U};
+    cout << "Test unsigned int: " << i << endl;
+
+    cout << "Testing numerical limits: \n";
+    cout << "Min unsigned value: " << numeric_limits<unsigned>::lowest();
 
     return 0;
 }
